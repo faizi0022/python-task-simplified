@@ -11,11 +11,6 @@ with open("name1.csv") as csv_file:
     print(f'Processed {line_count} lines.')
     lines=sorted(lines)
 
-    # with open("newcsv.csv",mode='w') as write_file:
-    #     for line in lines:
-    #         print(line)
-    #         write_file.write(line)
-    #         write_file.write('\n')
 
     with open("newcsv.csv",mode='w',newline='') as write_file:
         writer = csv.writer(write_file)
